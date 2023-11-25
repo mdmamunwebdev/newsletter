@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title</title>
+    <style>
+        * {
+            transition: all 0.6s;
+        }
+
+        html, body {
+            height: 100%;
+            margin: 0;
+        }
+
+        body {
+            font-family: 'Lato', sans-serif;
+            color: rgba(0, 0, 0, 0.7);
+            background: linear-gradient(to bottom, #0A1A29, #6D6475, #C69E92);
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #content {
+            position: relative;
+            max-width: 392px;
+            width: 90%; 
+            padding: 40px 20px 40px 20px;
+            background: #F57E20;
+            box-shadow: 0px 0px 35px rgba(0, 0, 0, 0.6);
+        }
+
+        #content h1 {
+            font-size: 26px;
+            color: black;
+        }
+
+        #content p {
+            font-weight: 100;
+            color: white;
+            margin: 15px 0;
+            line-height: 24px;
+        }
+
+        .form-container {
+            display: flex;
+            flex-wrap: wrap; 
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        input[type='email'],
+        input[type='text'] {
+            outline: none;
+            width: calc(49% - 5px); 
+            margin-bottom: 10px; 
+            padding: 10px;
+            border: 2px solid transparent;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        input[type='email']:focus, input[type='text']:focus {
+            border: 2px solid #aaa;
+        }
+
+        label {
+            width: 100%;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        #button {
+            color: white;
+            text-decoration: none;
+            width: 100%;
+            padding: 16px;
+            background: #000;
+            text-align: center;
+            border: 2px solid transparent;
+            font-size: 18px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+        #button:hover {
+            border: 2px solid #aaa;
+        }
+
+        @media screen and (max-width: 736px) {
+            input[type='email'],
+            input[type='text'] {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<form action="#" method="get">
+    <div id="content">
+        <h1>Subscribe to our newsletter</h1>
+        <p>Sign up for exclusive offers, upcoming events, compliance updates, and more.</p>
+        <div class="form-container">
+            <input type="text" placeholder="Name"/>
+            <input type="email" placeholder="Email"/>
+        </div>
+        <label>
+            <input type="checkbox" name="subscribe"> I accept the Privacy Policy
+        </label>
+        <button id="button">Subscribe</button>
+    </div>
+</form>
+
+</body>
+</html>
